@@ -59,6 +59,9 @@
     @extend .wy-alert.wy-alert-info
   .hint, .tip, .important
     @extend .wy-alert.wy-alert-success
+    background: lighten($testmunk-color,40%)
+    .wy-alert-title
+      background: lighten($testmunk-color,20%)
   .error, .danger
     @extend .wy-alert.wy-alert-danger
   .warning, .caution, .attention, .admonition-todo

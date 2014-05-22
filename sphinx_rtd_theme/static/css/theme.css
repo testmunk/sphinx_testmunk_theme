@@ -2175,7 +2175,7 @@ a .fa, a .rst-content .admonition-title, .rst-content a .admonition-title, a .rs
   background: #e1e4e5;
 }
 .wy-alert.wy-alert-neutral a, .rst-content .wy-alert-neutral.note a, .rst-content .wy-alert-neutral.attention a, .rst-content .wy-alert-neutral.caution a, .rst-content .wy-alert-neutral.danger a, .rst-content .wy-alert-neutral.error a, .rst-content .wy-alert-neutral.hint a, .rst-content .wy-alert-neutral.important a, .rst-content .wy-alert-neutral.tip a, .rst-content .wy-alert-neutral.warning a, .rst-content .wy-alert-neutral.seealso a, .rst-content .wy-alert-neutral.admonition-todo a {
-  color: #2980b9;
+  color: #369bdd;
 }
 
 .wy-alert p:last-child, .rst-content .note p:last-child, .rst-content .attention p:last-child, .rst-content .caution p:last-child, .rst-content .danger p:last-child, .rst-content .error p:last-child, .rst-content .hint p:last-child, .rst-content .important p:last-child, .rst-content .tip p:last-child, .rst-content .warning p:last-child, .rst-content .seealso p:last-child, .rst-content .admonition-todo p:last-child {
@@ -2267,7 +2267,7 @@ button[disabled] {
   background-color: #27ae60;
   text-decoration: none;
   font-weight: normal;
-  font-family: "Lato", "proxima-nova", "Helvetica Neue", Arial, sans-serif;
+  font-family: "proxima-nova", "Helvetica Neue", Arial, sans-serif;
   box-shadow: 0px 1px 2px -1px rgba(255, 255, 255, 0.5) inset, 0px -2px 0px 0px rgba(0, 0, 0, 0.1) inset;
   outline-none: false;
   vertical-align: middle;
@@ -2284,7 +2284,7 @@ button[disabled] {
 }
 
 .btn-hover {
-  background: #2e8ece;
+  background: #4ca6e1;
   color: white;
 }
 
@@ -2387,22 +2387,22 @@ button[disabled] {
 
 .btn-link {
   background-color: transparent !important;
-  color: #2980b9;
+  color: #369bdd;
   box-shadow: none;
   border-color: transparent !important;
 }
 .btn-link:hover {
   background-color: transparent !important;
-  color: #409ad5 !important;
+  color: #62b1e4 !important;
   box-shadow: none;
 }
 .btn-link:active {
   background-color: transparent !important;
-  color: #409ad5 !important;
+  color: #62b1e4 !important;
   box-shadow: none;
 }
 .btn-link:visited {
-  color: #9b59b6;
+  color: #369bdd;
 }
 
 .wy-btn-group .btn, .wy-control .btn {
@@ -2449,7 +2449,7 @@ button[disabled] {
   cursor: pointer;
 }
 .wy-dropdown-menu > dd > a:hover {
-  background: #2980b9;
+  background: #369bdd;
   color: white;
 }
 .wy-dropdown-menu > dd.divider {
@@ -2490,7 +2490,7 @@ button[disabled] {
   padding: 6px 12px;
 }
 .wy-dropdown.wy-dropdown-bubble .wy-dropdown-menu a:hover {
-  background: #2980b9;
+  background: #369bdd;
   color: white;
 }
 
@@ -2692,7 +2692,7 @@ input {
 input[type="button"], input[type="reset"], input[type="submit"] {
   -webkit-appearance: button;
   cursor: pointer;
-  font-family: "Lato", "proxima-nova", "Helvetica Neue", Arial, sans-serif;
+  font-family: "proxima-nova", "Helvetica Neue", Arial, sans-serif;
   *overflow: visible;
 }
 input[type="text"], input[type="password"], input[type="email"], input[type="url"], input[type="date"], input[type="month"], input[type="time"], input[type="datetime"], input[type="datetime-local"], input[type="week"], input[type="number"], input[type="search"], input[type="tel"], input[type="color"] {
@@ -2701,7 +2701,7 @@ input[type="text"], input[type="password"], input[type="email"], input[type="url
   display: inline-block;
   border: 1px solid #cccccc;
   font-size: 80%;
-  font-family: "Lato", "proxima-nova", "Helvetica Neue", Arial, sans-serif;
+  font-family: "proxima-nova", "Helvetica Neue", Arial, sans-serif;
   box-shadow: inset 0 1px 3px #dddddd;
   border-radius: 0;
   -webkit-transition: border 0.3s linear;
@@ -2771,7 +2771,7 @@ textarea {
   overflow: auto;
   vertical-align: top;
   width: 100%;
-  font-family: "Lato", "proxima-nova", "Helvetica Neue", Arial, sans-serif;
+  font-family: "proxima-nova", "Helvetica Neue", Arial, sans-serif;
 }
 
 select, textarea {
@@ -3100,14 +3100,14 @@ select[disabled], textarea[disabled], input[readonly], select[readonly], textare
 }
 
 a {
-  color: #2980b9;
+  color: #369bdd;
   text-decoration: none;
 }
 a:hover {
-  color: #3091d1;
+  color: #124668;
 }
 a:visited {
-  color: #9b59b6;
+  color: #369bdd;
 }
 
 html {
@@ -3116,7 +3116,7 @@ html {
 }
 
 body {
-  font-family: "Lato", "proxima-nova", "Helvetica Neue", Arial, sans-serif;
+  font-family: "proxima-nova", "Helvetica Neue", Arial, sans-serif;
   font-weight: normal;
   color: #404040;
   min-height: 100%;
@@ -3789,7 +3789,7 @@ div[class^='highlight'] pre {
 
 .wy-side-nav-search {
   z-index: 200;
-  background-color: #2980b9;
+  background-color: #369bdd;
   text-align: center;
   padding: 0.809em;
   display: block;
@@ -3800,7 +3800,7 @@ div[class^='highlight'] pre {
   width: 100%;
   border-radius: 50px;
   padding: 6px 12px;
-  border-color: #2472a4;
+  border-color: #248fd5;
 }
 .wy-side-nav-search img {
   display: block;
@@ -3824,13 +3824,13 @@ div[class^='highlight'] pre {
 }
 
 .wy-nav .wy-menu-vertical header {
-  color: #2980b9;
+  color: #369bdd;
 }
 .wy-nav .wy-menu-vertical a {
   color: #b3b3b3;
 }
 .wy-nav .wy-menu-vertical a:hover {
-  background-color: #2980b9;
+  background-color: #369bdd;
   color: white;
 }
 
@@ -3884,7 +3884,7 @@ div[class^='highlight'] pre {
 
 .wy-nav-top {
   display: none;
-  background: #2980b9;
+  background: #369bdd;
   color: white;
   padding: 0.4045em 0.809em;
   position: relative;
@@ -4044,11 +4044,11 @@ nav.stickynav {
   color: #fcfcfc;
   background: #1f1d1d;
   border-top: solid 10px #343131;
-  font-family: "Lato", "proxima-nova", "Helvetica Neue", Arial, sans-serif;
+  font-family: "proxima-nova", "Helvetica Neue", Arial, sans-serif;
   z-index: 400;
 }
 .rst-versions a {
-  color: #2980b9;
+  color: #369bdd;
   text-decoration: none;
 }
 .rst-versions .rst-badge-small {
@@ -4184,6 +4184,12 @@ nav.stickynav {
 .rst-content .admonition-title:before {
   margin-right: 4px;
 }
+.rst-content .hint, .rst-content .tip, .rst-content .important {
+  background: #e4f2fb;
+}
+.rst-content .hint .wy-alert-title, .rst-content .hint .admonition-title, .rst-content .tip .wy-alert-title, .rst-content .tip .admonition-title, .rst-content .important .wy-alert-title, .rst-content .important .admonition-title {
+  background: #8dc6ec;
+}
 .rst-content .admonition table {
   border-color: rgba(0, 0, 0, 0.1);
 }
@@ -4317,7 +4323,7 @@ nav.stickynav {
   font-weight: bold;
 }
 .rst-content a tt {
-  color: #2980b9;
+  color: #369bdd;
 }
 .rst-content dl {
   margin-bottom: 24px;
