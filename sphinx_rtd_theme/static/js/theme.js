@@ -26,6 +26,10 @@ $( document ).ready(function() {
         else body.show(300);
 
     });
+
+    //Make the danger admonition display troubleshooting instead
+    $(".admonition.danger").children(".first").html("Troubleshooting")
+
 });
 
 window.SphinxRtdTheme = (function (jquery) {

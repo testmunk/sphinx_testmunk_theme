@@ -64,6 +64,9 @@
       background: lighten($testmunk-color,20%)
   .error, .danger
     @extend .wy-alert.wy-alert-danger
+    background: lighten($gray,55%)
+    .wy-alert-title
+      background: lighten($gray,20%)
   .warning, .caution, .attention, .admonition-todo
     @extend .wy-alert.wy-alert-warning
   // Some people put tables in notes. Let's give them very basic support.
