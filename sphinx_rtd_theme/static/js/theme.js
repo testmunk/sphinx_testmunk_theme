@@ -14,6 +14,18 @@ $( document ).ready(function() {
     });  
     // Make tables responsive
     $("table.docutils:not(.field-list)").wrap("<div class='wy-table-responsive'></div>");
+
+    //Admonitions start retracted
+    $(".admonition .last").hide();
+
+    //Clicking the title shows the body of the admonition
+    $(".admonition").click(function () {
+        var body = $(this).children(".last");
+
+        if (body.is(":visible")) body.hide(300);
+        else body.show(300);
+
+    });
 });
 
 window.SphinxRtdTheme = (function (jquery) {
