@@ -13,6 +13,14 @@
 //    4. If you have changes for mobile/tablet, put them at the bottom of the sass file.
 // --------------------------------------------------------------------------------------------------------------------
 
+//Applied to all admonitions that @include admonitionmod
+@mixin admonitionmod($color, $title-lighten, $body-lighten)
+  background: lighten($color,$body-lighten)
+  .wy-alert-title
+    background: lighten($color,$title-lighten)
+    &:hover
+      background: darken(lighten($color, $title-lighten), 10%)
+
 .rst-content
   // Sphinx by default applies HxW style attributes to images. This fixes that oversite.
   img
@@ -53,22 +61,21 @@
     @extend .wy-alert-title
     @extend .fa
     @extend .fa-exclamation-circle
+
     &:before
       margin-right: 4px
   .note, .seealso
     @extend .wy-alert.wy-alert-info
+    @include admonitionmod($note-color, $note-title-lighten, $note-body-lighten)
   .hint, .tip, .important
     @extend .wy-alert.wy-alert-success
-    background: lighten($testmunk-color,40%)
-    .wy-alert-title
-      background: lighten($testmunk-color,20%)
+    @include admonitionmod($hint-color, $hint-title-lighten, $hint-body-lighten)
   .error, .danger
     @extend .wy-alert.wy-alert-danger
-    background: lighten($gray,55%)
-    .wy-alert-title
-      background: lighten($gray,20%)
+    @include admonitionmod($troubleshooting-color, $troubleshooting-title-lighten, $troubleshooting-body-lighten)
   .warning, .caution, .attention, .admonition-todo
     @extend .wy-alert.wy-alert-warning
+    @include admonitionmod($warning-color, $warning-title-lighten, $warning-body-lighten)
   // Some people put tables in notes. Let's give them very basic support.
   .admonition table
     border-color: rgba(0,0,0,.1)

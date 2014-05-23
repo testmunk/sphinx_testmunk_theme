@@ -12,8 +12,32 @@ $custom-font-family2:                 Georgia, serif
 $code-font-family:                    "Consolas", "Monaco", monospace
 
 //Testmunk specific coloring
-$testmunk-color:        #369BDD
-$link-color:            $testmunk-color
-$link-color-visited:    $link_color
-$link-color-hover:      darken($link-color, 30%)
-$max-width:             850px
+$testmunk-color:                      #369BDD
+$link-color:                          $testmunk-color
+$link-color-visited:                  $link_color
+$link-color-hover:                    darken($link-color, 30%)
+$max-width:                           850px
+$imggutter:                           0.1em
+
+// Variables for the different admonitions
+// Applied through the @mixin admonitionmod function in _theme_rst.sass
+
+//.error, .danger
+$troubleshooting-color:               $yellow
+$troubleshooting-title-lighten:       14%
+$troubleshooting-body-lighten:        40%
+
+//.hint, .tip, .important
+$hint-color:                          $testmunk-color
+$hint-title-lighten:                  10%
+$hint-body-lighten:                   40%
+
+//.note, .seealso
+$note-color:                          $purple
+$note-title-lighten:                  20%
+$note-body-lighten:                   40%
+
+//.warning, .caution, .attention, .admonition-todo
+$warning-color:                       $orange
+$warning-title-lighten:               20%
+$warning-body-lighten:                40%
