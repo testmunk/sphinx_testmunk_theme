@@ -51,6 +51,9 @@
         padding: $gutter / 4 $gutter * 1.5
         &:hover
           background: darken($section-background-color, 15%)
+        &.nav-active
+          background: lighten($testmunk-color, 10%)
+          color: $white
   // On state for the first level
   li.on a, li.current > a
     color: $text-color
