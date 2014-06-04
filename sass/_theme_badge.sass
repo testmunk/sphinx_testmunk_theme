@@ -14,13 +14,17 @@
   .rst-badge-small
     display: none
   .rst-current-version
-    padding: $base-line-height / 2
+    padding: 3 * $base-line-height / 4
     background-color: darken($menu-background-color, 5%)
     display: block
-    text-align: right
+    text-align: center
     font-size: 90%
     cursor: pointer
-    color: $green
+    color: $white
+    &:hover
+      background-color: $testmunk-color
+    a
+      color: $white
     +clearfix
     .fa
       color: $section-background-color
