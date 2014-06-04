@@ -40,6 +40,21 @@
       color: $black
   &.shift-up .rst-other-versions
     display: block
+  .rst-testmunk-chat
+    padding: 3 * $base-line-height / 4
+    background-color: darken($menu-background-color, 5%)
+    display: block
+    text-align: center
+    font-size: 90%
+    cursor: pointer
+    color: $white
+    &:hover
+      background-color: $testmunk-color
+    a
+      color: $white
+    +clearfix
+  &.shift-up .rst-other-versions
+    display: block
   .rst-other-versions
     font-size: 90%
     padding: $base-line-height / 2
