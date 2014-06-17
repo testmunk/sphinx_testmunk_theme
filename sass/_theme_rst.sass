@@ -84,6 +84,25 @@
   .warning, .caution, .attention, .admonition-todo
     @extend .wy-alert.wy-alert-warning
     @include admonitionmod($warning-color, $warning-title-lighten, $warning-body-lighten)
+
+  // Code that deals with teststep admonition formatting and icons
+  // Realize that for multi-platform steps, the second icon is
+  // injected to the titles with JS contained in theme.js
+  .admonition-teststep, .admonition-teststep-ios, .admonition-teststep-android, .admonition-teststep-ios-android, .admonition-teststep-android-ios
+    @extend .wy-alert.wy-alert-success
+    padding-left: 12px
+    padding-right: 12px
+    @include admonitionmod($teststep-color, $teststep-title-lighten, $teststep-body-lighten)
+  .admonition-teststep, .admonition-teststep-ios, .admonition-teststep-ios-android, .admonition-teststep-android-ios
+    .admonition-title
+      @extend .fa-apple
+  .admonition-teststep-android
+    .admonition-title
+      @extend .fa-android
+  .second-platform-icon
+    margin-right: 8px
+
+
   // Some people put tables in notes. Let's give them very basic support.
   .admonition table
     border-color: rgba(0,0,0,.1)

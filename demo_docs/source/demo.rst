@@ -444,34 +444,73 @@ A figure directive with center alignment
 Admonitions
 ```````````
 
-.. Attention:: Directives at large.
+.. Attention::
+
+  content
+
+  Directives at large.
 
 .. Caution::
+  
+  content
 
-   Don't take any wooden nickels.
+  Don't take any wooden nickels.
 
-.. DANGER:: Mad scientist at work!
+.. DANGER::
 
-.. Error:: Does not compute.
+  content
 
-.. Hint:: It's bigger than a bread box.
+  Mad scientist at work!
+
+.. Error::
+
+  content
+
+  Does not compute.
+
+.. Hint::
+
+  content
+
+  It's bigger than a bread box.
 
 .. Important::
-   - Wash behind your ears.
-   - Clean up your room.
-   - Call your mother.
-   - Back up your data.
 
-.. Note:: This is a note.
+  content
 
-.. Tip:: 15% if the service is good.
+  Title
 
-.. WARNING:: Strong prose may provoke extreme mental exertion.
-   Reader discretion is strongly advised.
+.. Note::
 
-.. admonition:: And, by the way...
+  content
 
-   You can make up your own admonition too.
+  This is a note.
+
+.. Tip::
+
+  content
+
+  15% if the service is good.
+
+.. WARNING::
+
+  content
+
+  Strong prose may provoke extreme mental exertion.
+
+.. admonition:: Custom admonition
+
+  content
+
+  You can even create your own
+
+.. admonition:: teststep ios android
+
+   content
+
+   more content
+
+   Then I...
 
 Topics, Sidebars, and Rubrics
 `````````````````````````````
