@@ -7,20 +7,20 @@
 .. _grunt: http://www.gruntjs.com
 .. _node: http://www.nodejs.com
 .. _hidden: http://sphinx-doc.org/markup/toctree.html
-.. _github.com/snide/sphinx_rtd_theme: https://github.com/snide/sphinx_rtd_theme
-.. _testmunk/docs: https://github.com/testmunk/docs
+.. _sphinx_rtd_theme: https://github.com/snide/sphinx_rtd_theme
+.. _docs: https://github.com/testmunk/docs
 
-**************************
-Read the Docs Sphinx Theme
-**************************
+*********************
+Testmunk Sphinx Theme
+*********************
 
 View a working demo over on docs.testmunk.com_.
 
 This is a prototype mobile-friendly sphinx_ theme made for docs.testmunk.com_. It's
-a fork from the official ReadTheDocs sphinx_ theme at github.com/snide/sphinx_rtd_theme_.
+a fork from the official ReadTheDocs sphinx_ theme at the sphinx_rtd_theme_ repository.
 
-**This repo also exists as a submodule within the testmunk/docs_ repo itself**, so please make your edits to
-the SASS files here, rather than the .css files on testmunk/docs_.
+**This repo also exists as a submodule within the docs_ repo itself**, so please make your edits to
+the SASS files here, rather than the .css files on the docs_ repository.
 
 How the Table of Contents builds
 ================================
