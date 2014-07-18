@@ -1,4 +1,4 @@
-.. _readthedocs.org: http://www.readthedocs.org
+.. _docs.testmunk.com: http://docs.testmunk.com
 .. _bower: http://www.bower.io
 .. _sphinx: http://www.sphinx-doc.org
 .. _compass: http://www.compass-style.org
@@ -6,57 +6,21 @@
 .. _wyrm: http://www.github.com/snide/wyrm/
 .. _grunt: http://www.gruntjs.com
 .. _node: http://www.nodejs.com
-.. _demo: http://docs.readthedocs.org
 .. _hidden: http://sphinx-doc.org/markup/toctree.html
+.. _github.com/snide/sphinx_rtd_theme: https://github.com/snide/sphinx_rtd_theme
+.. _testmunk/docs: https://github.com/testmunk/docs
 
 **************************
 Read the Docs Sphinx Theme
 **************************
 
-View a working demo_ over on readthedocs.org_.
+View a working demo over on docs.testmunk.com_.
 
-This is a prototype mobile-friendly sphinx_ theme I made for readthedocs.org_. It's
-currently in development and includes some rtd variable checks that can be ignored
-if you're just trying to use it on your project outside of that site.
+This is a prototype mobile-friendly sphinx_ theme made for docs.testmunk.com_. It's
+a fork from the official ReadTheDocs sphinx_ theme at github.com/snide/sphinx_rtd_theme_.
 
-**This repo also exists as a submodule within the readthedocs itself**, so please make your edits to
-the SASS files here, rather than the .css files on RTD.
-
-.. image:: screen_mobile.png
-    :width: 100%
-Installation
-============
-
-Via package
------------
-
-Download the package or add it to your ``requirements.txt`` file:
-
-.. code:: bash
-
-    $ pip install sphinx_rtd_theme
-
-In your ``conf.py`` file:
-
-.. code:: python
-
-    import sphinx_rtd_theme
-
-    html_theme = "sphinx_rtd_theme"
-
-    html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
-
-Via git or download
--------------------
-
-Symlink or subtree the ``sphinx_rtd_theme/sphinx_rtd_theme`` repository into your documentation at
-``docs/_themes/sphinx_rtd_theme`` then add the following two settings to your Sphinx
-conf.py file:
-
-.. code:: python
-
-    html_theme = "sphinx_rtd_theme"
-    html_theme_path = ["_themes", ]
+**This repo also exists as a submodule within the testmunk/docs_ repo itself**, so please make your edits to
+the SASS files here, rather than the .css files on testmunk/docs_.
 
 How the Table of Contents builds
 ================================
@@ -80,9 +44,9 @@ alltogether change the setting in ``conf.py``.
 Contributing or modifying the theme
 ===================================
 
-The sphinx_rtd_theme is primarily a sass_ project that requires a few other sass libraries. I'm
-using bower_ to manage these dependencies and sass_ to build the css. The good news is
-I have a very nice set of grunt_ operations that will not only load these dependecies, but watch
+The sphinx_testmunk_theme is primarily a sass_ project that requires a few other sass libraries. It uses
+using bower_ to manage these dependencies and sass_ to build the css. It comes with
+a very nice set of grunt_ operations that will not only load these dependecies, but watch
 for changes, rebuild the sphinx demo docs and build a distributable version of the theme.
 The bad news is this means you'll need to set up your environment similar to that
 of a front-end developer (vs. that of a python developer). That means installing node and ruby.
@@ -130,34 +94,13 @@ This default task will do the following **very cool things that make it worth th
 4. It'll rebuild the sphinx docs anytime it notices a change to .rst, .html, .js
    or .css files.
 
-Before you send a Pull Request
-------------------------------
+Updating the theme for the testmunk/docs repository
+===================================================
 
-When you're done with your edits, you can run ``grunt build`` to clean out the old
-files and rebuild a new distribution, compressing the css and cleaning out
-extraneous files. Please do this before you send in a PR.
+Run `grunt` to make sure the theme is built. Copy the files from the `sphinx_rtd_theme/` 
+folder in the `sphinx_testmunk_theme` repository into the `_themes/sphinx_testmunk_theme/`
+folder in the `docs` repository. Build the docs locally to make sure they look correct and
+build with no errors, and then commit and push the changes.
 
-Using this theme locally, then building on Read the Docs?
-==========================================================
 
-Currently if you import sphinx_rtd_theme in your local sphinx build, then pass
-that same config to Read the Docs, it will fail, since RTD gets confused. If
-you want to run this theme locally and then also have it build on RTD, then
-you can add something like this to your config. Thanks to Daniel Oaks for this.
-
-.. code:: python
-
-    # on_rtd is whether we are on readthedocs.org, this line of code grabbed from docs.readthedocs.org
-    on_rtd = os.environ.get('READTHEDOCS', None) == 'True'
-
-    if not on_rtd:  # only import and set the theme if we're building docs locally
-        import sphinx_rtd_theme
-        html_theme = 'sphinx_rtd_theme'
-        html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
-
-    # otherwise, readthedocs.org uses their theme by default, so no need to specify it
-
-TODO
-====
-* Separate some sass variables at the theme level so you can overwrite some basic colors.
 
