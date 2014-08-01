@@ -19,8 +19,27 @@ View a working demo over on docs.testmunk.com_.
 This is a prototype mobile-friendly sphinx_ theme made for docs.testmunk.com_. It's
 a fork from the official ReadTheDocs sphinx_ theme at the sphinx_rtd_theme_ repository.
 
-**This repo also exists as a submodule within the docs_ repo itself**, so please make your edits to
-the SASS files here, rather than the .css files on the docs_ repository.
+**Part of this repo also exists as a submodule within the docs_ repo itself**, so please 
+make your edits to the SASS files here, rather than the .css files on the docs_ repository.
+
+IMPORTANT INFORMATION
+=====================
+
+There are some tricky hacks in this repository that you should be aware of before editing
+either this or the docs_ repo:
+
+- There is front-end JavaScript code (from now on FEJSC) changing all Danger admonitions
+into Troubleshooting admonitions.
+
+- There is FEJSC that moves the last paragraph of each admonition and inserts it in the
+title header. That is how we acheive admonitions with custom titles.
+
+- The Teststep library icons for each platform are there because of FEJSC and SASS code
+that replaces certain keyword custom admonition names with those icons. Look into the
+teststep libary code in the docs_ repo 
+
+- There is FEJSC in place that makes all images with `Screenshot` as alt-text into expandable
+text that says "See screenshot" and displays the screenshot when clicked.
 
 How the Table of Contents builds
 ================================
